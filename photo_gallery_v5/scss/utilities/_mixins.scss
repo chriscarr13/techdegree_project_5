@@ -1,0 +1,7 @@
+// gives each span a title for their prospective img element sibling. 
+@mixin title-It ($number, $msg){
+    &:nth-child(#{$number}) span:after{
+        content: $msg;
+        position: absolute;
+    }
+}

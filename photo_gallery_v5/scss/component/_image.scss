@@ -1,0 +1,62 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.photo-link{
+    background-color: rgb(0,0,0);
+    position: relative;
+    @include title-It(1, $title1);
+    @include title-It(2, $title2);
+    @include title-It(3, $title3);
+    @include title-It(4, $title4);
+    @include title-It(5, $title5);
+    @include title-It(6, $title6);
+    @include title-It(7, $title7);
+    @include title-It(8, $title8);
+    @include title-It(9, $title9);
+    @include title-It(10, $title10);
+    @include title-It(11, $title11);
+    @include title-It(12, $title12);
+
+    span:after {
+        opacity: 0;
+        top: 4%;
+        left: 5%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* ============================================= */
+/*              Hover Effect                     */
+/* ============================================= */
+
+.photo-link,
+.photo,
+.title,
+i {
+    transition: opacity .5s ease-in-out;
+}
+
+.photo-link:hover  .title:after {
+    opacity: 70%;
+}
+
+.photo-link:hover i{
+    opacity: 60%;
+}
+
+.photo-link:hover img {
+    opacity: 70%;
+}
+
